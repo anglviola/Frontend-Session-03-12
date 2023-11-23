@@ -16,7 +16,7 @@ function SubscribeSection() {
     queryKey: ["Product"],
     queryFn: fetchProduct,
   });
-  function checkProductCart(productId: number) {
+  function checkProductCart(productId: number | string) {
     const checker = cart.some((checkProps) => checkProps.item.id === productId);
     return checker;
   }
