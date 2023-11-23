@@ -36,7 +36,7 @@ app.post("/checkout", async (req, res) => {
   );
 });
 
-app.post("/", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello world");
 });
 app.listen(3000, () => {
