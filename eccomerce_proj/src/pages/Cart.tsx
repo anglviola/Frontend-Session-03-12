@@ -42,7 +42,7 @@ function Cart() {
     UiAddCartStateMain[]
   >(
     (cart) => {
-      return fetch("http://localhost:3000/checkout", {
+      return fetch("https://coral-eccomerce-server.vercel.app/checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
