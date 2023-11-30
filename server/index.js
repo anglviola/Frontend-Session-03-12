@@ -17,7 +17,7 @@ const successUrl =
     ? "https://your-production-url/success"
     : "http://localhost:3000/success";
 
-app.post("/checkout", async (req, res) => {
+app.get("/", async (req, res) => {
   console.log(req.body);
   const items = req.body.items;
   let lineItems = [];
